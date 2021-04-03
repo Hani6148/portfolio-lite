@@ -46,7 +46,7 @@ $(document).on("scroll", (function () {
         $(".menu-link").css("background", "white");
         $("#link4").css("writing-mode", "horizontal-tb");
         $("#link4").css("font-size", "1.5rem");
-        $("#link4").css("background", "linear-gradient(0deg,rgb(5 24 50 / 33%) 50%, transparent 50%)");
+        $("#link4").css("background", "linear-gradient(0deg,rgb(243 233 216 / 70%) 50%, transparent 50%)");
     }
     if ((pos > vh*2+1)) {
         $(".back").css("z-index", "5");
