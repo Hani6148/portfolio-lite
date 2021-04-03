@@ -22,7 +22,7 @@
     align-items:center;
 }
    .mycontact{
-    background-image: url(contact-back.jpg);
+    background-image: url(../images/contact-back.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -301,7 +301,7 @@ html{
         flex: 5 5;
         width: 100%;
         height: 100%;
-        background-image: url("hani-design.jpg");
+        background-image: url("../images/hani-design.jpg");
         background-size: cover;
         background-position: right;
     
@@ -418,7 +418,7 @@ html{
         #project1{
             height: 28%;
             width: 30%;
-            background-image: url(eventbook.jpg);
+            background-image: url(../images/eventbook.jpg);
             background-size: cover;
             background-position-x: center;
             position: absolute;
@@ -457,7 +457,7 @@ html{
         }
         #project1:hover{
             background-size: cover;
-            background-image: url(eventbook-blur.jpg);
+            background-image: url(../images/eventbook-blur.jpg);
         }
         #project1:hover #project1-presentation
         {
@@ -471,7 +471,7 @@ html{
             height: 30%;
             width: 25%;
             background-repeat: no-repeat;
-            background-image: url(clothing.jpg);
+            background-image: url(../images/clothing.jpg);
             position: absolute;
             top: 5%;
             left: 20%;
@@ -509,7 +509,7 @@ html{
         }
         }
         #project2:hover{
-            background-image: url(clothing-dark.jpg);
+            background-image: url(../images/clothing-dark.jpg);
         }
         #project2:hover #project2-presentation
         {
@@ -522,7 +522,7 @@ html{
         #project3{
             height: 30%;
             width: 30%;
-            background-image: url("trivia.jpg");
+            background-image: url("../images/trivia.jpg");
             background-size: cover;
             background-position-x: center;
             position: absolute;
@@ -562,7 +562,7 @@ html{
         }
         #project3:hover{
             
-            background-image: url(trivia-blur.jpg);
+            background-image: url(../images/trivia-blur.jpg);
         }
         #project3:hover #project3-presentation
         {
@@ -573,7 +573,7 @@ html{
         #project4{
             height: 30%;
             width: 33%;
-            background-image: url("srsly.jpg");
+            background-image: url("../images/srsly.jpg");
             background-size: cover;
             background-position-x: center;
             position: absolute;
@@ -613,7 +613,7 @@ html{
         }
         #project4:hover{
             
-            background-image: url(srsly-blur.jpg);
+            background-image: url(../images/srsly-blur.jpg);
             
         }
         #project4:hover #project4-presentation
@@ -624,7 +624,7 @@ html{
         #project5{
             height: 33%;
             width: 36%;
-            background-image: url(phil-it.jpg);
+            background-image: url(../images/phil-it.jpg);
             background-size: cover;
             background-position-x: center;
             position: absolute;
@@ -663,7 +663,7 @@ html{
             }
         }
         #project5:hover{
-            background-image: url(phil-it-blur.jpg);
+            background-image: url(../images/phil-it-blur.jpg);
         }
         #project5:hover #project5-presentation
         {
@@ -673,7 +673,7 @@ html{
         #project6{
             height: 29%;
             width: 29%;
-            background-image: url(googlebooks.jpg);
+            background-image: url(../images/googlebooks.jpg);
             background-size: cover;
             background-position-x: center;
             position: absolute;
@@ -711,7 +711,7 @@ html{
             }
         }
         #project6:hover{
-            background-image: url(googlebooks-dark.jpg);
+            background-image: url(../images/googlebooks-dark.jpg);
         }
         #project6:hover #project6-presentation
         {
