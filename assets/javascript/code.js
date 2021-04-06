@@ -1,29 +1,12 @@
-console.log("window height: " + window.innerHeight)
+//calculating the height of the viewport 
 vh = window.innerHeight
 
-// $(".menu-link").on("click",function(e){
-//     console.log("#"+this.id)
-//     $(".menu-link").css("writing-mode","vertical-rl");
-//     $(".menu-link").css("font-size","1rem");
-//     
 
-//     $("#"+this.id).css("writing-mode","horizontal-tb");
-//     $("#"+this.id).css("font-size","1.5rem");
-//     $("
-// })
+
 $(document).on("scroll", (function () {
-
+   //calculating scroll position on scroll event 
+  //making style changes to the link corresponding to the page section according to the scroll position 
     pos = document.documentElement.scrollTop
-    console.log("position: " + pos)
-    console.log("window height: " + vh)
-    if (pos >= vh && pos <= vh + 2) {
-        $(".menu-link").css("writing-mode", "vertical-rl");
-        $(".menu-link").css("font-size", "1rem");
-        $(".menu-link").css("background", "white");
-        $("#link2").css("writing-mode", "horizontal-tb");
-        $("#link2").css("font-size", "1.5rem");
-        $("#link2").css("background", "linear-gradient(0deg,rgb(5 24 50 / 33%) 50%, transparent 50%)");
-    }
     if (pos === 0) {
         $(".menu-link").css("writing-mode", "vertical-rl");
         $(".menu-link").css("font-size", "1rem");
@@ -32,7 +15,17 @@ $(document).on("scroll", (function () {
         $("#link1").css("font-size", "1.5rem");
         $("#link1").css("background", "linear-gradient(0deg,rgb(30 164 194 / 72%) 50%, transparent 50%)");
     }
-    if (pos >= vh * 2 && pos <= vh * 2 + 2) {
+
+    else if (pos >= vh && pos <= vh + 2) {
+        $(".menu-link").css("writing-mode", "vertical-rl");
+        $(".menu-link").css("font-size", "1rem");
+        $(".menu-link").css("background", "white");
+        $("#link2").css("writing-mode", "horizontal-tb");
+        $("#link2").css("font-size", "1.5rem");
+        $("#link2").css("background", "linear-gradient(0deg,rgb(5 24 50 / 33%) 50%, transparent 50%)");
+    }
+
+    else if (pos >= vh * 2 && pos <= vh * 2 + 2) {
         $(".menu-link").css("writing-mode", "vertical-rl");
         $(".menu-link").css("font-size", "1rem");
         $(".menu-link").css("background", "white");
@@ -40,7 +33,7 @@ $(document).on("scroll", (function () {
         $("#link3").css("font-size", "1.5rem");
         $("#link3").css("background", "linear-gradient(0deg,#b0bdcb 50%, transparent 50%)");
     }
-    if (pos >= vh * 3 && pos <= vh * 3 + 2) {
+    else if (pos >= vh * 3 && pos <= vh * 3 + 2) {
         $(".menu-link").css("writing-mode", "vertical-rl");
         $(".menu-link").css("font-size", "1rem");
         $(".menu-link").css("background", "white");
@@ -48,6 +41,8 @@ $(document).on("scroll", (function () {
         $("#link4").css("font-size", "1.5rem");
         $("#link4").css("background", "linear-gradient(0deg,rgb(243 233 216 / 70%) 50%, transparent 50%)");
     }
+
+    //bring the .back section forward if the scroll position is bigger than the height of the view port + 1 
     if ((pos > vh*2+1)) {
         $(".back").css("z-index", "5");
        
