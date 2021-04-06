@@ -1,4 +1,13 @@
 @media screen and (min-width: 300px) {
+  .leftspace {
+    height: 100%;
+    flex: 1 1;
+    background-color: white;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .back {
     display: flex;
     height: 100vh;
@@ -11,13 +20,6 @@
     z-index: -88;
     margin-left: auto;
     margin-right: auto;
-  }
-  .back .leftspace {
-    height: 100%;
-    flex: 1 1;
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
   }
   .back .mycontact {
     background-image: url(../images/contact-back.jpg);
@@ -93,14 +95,6 @@
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
-  }
-  .back2 .leftspace {
-    height: 100%;
-    flex: 1 1;
-    background-color: white;
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
   }
   .back2 .resume-bio {
     display: flex;
@@ -197,11 +191,6 @@
     margin-left: auto;
     overflow: hidden;
   }
-  .fixed-wrap .menuspace .menu #up-arrow, .fixed-wrap .menuspace .menu #down-arrow {
-    text-align: center;
-    color: lightgray;
-    font-size: 5vh;
-  }
   .fixed-wrap .menuspace .menu .wrap {
     display: flex;
     flex-direction: column;
@@ -233,13 +222,6 @@
     letter-spacing: 0.2rem;
     transition: all ease-out 0.2s;
   }
-  .fixed-wrap .menuspace .menu .wrap a .menu-image {
-    height: 100%;
-    width: 100%;
-  }
-  .fixed-wrap .menuspace .menu .wrap .up-arrow {
-    font-size: 1rem;
-  }
 
   #portrait {
     position: relative;
@@ -250,14 +232,6 @@
     width: 100%;
     background-color: white;
     display: flex;
-  }
-  #portrait .leftspace {
-    height: 100%;
-    display: none;
-    flex: 1 1;
-    background-color: white;
-    flex-wrap: wrap;
-    align-items: center;
   }
   #portrait .porpicture {
     flex: 5 5;
@@ -326,14 +300,6 @@
     position: relative;
     z-index: 10;
   }
-  #projects .leftspace {
-    height: 100%;
-    flex: 1 1;
-    background-color: white;
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
-  }
   #projects .project-enum {
     flex: 5 5;
     display: flex;
@@ -380,6 +346,9 @@
     top: 4%;
     left: 52%;
   }
+  #projects .project-enum #project1:hover {
+    background-image: url(../images/eventbook-blur.jpg);
+  }
   #projects .project-enum #project1 #project1-presentation {
     display: none;
   }
@@ -403,10 +372,6 @@
     font-size: 0.7rem;
     text-align: justify;
   }
-  #projects .project-enum #project1:hover {
-    background-size: cover;
-    background-image: url(../images/eventbook-blur.jpg);
-  }
   #projects .project-enum #project1:hover #project1-presentation {
     display: block;
   }
@@ -420,6 +385,9 @@
     left: 20%;
     background-size: cover;
     background-position-x: center;
+  }
+  #projects .project-enum #project2:hover {
+    background-image: url(../images/clothing-dark.jpg);
   }
   #projects .project-enum #project2 #project2-presentation {
     display: none;
@@ -444,9 +412,6 @@
     font-size: 0.7rem;
     text-align: justify;
   }
-  #projects .project-enum #project2:hover {
-    background-image: url(../images/clothing-dark.jpg);
-  }
   #projects .project-enum #project2:hover #project2-presentation {
     display: block;
   }
@@ -460,6 +425,9 @@
     top: 33%;
     left: 55%;
     z-index: 10;
+  }
+  #projects .project-enum #project3:hover {
+    background-image: url(../images/trivia-blur.jpg);
   }
   #projects .project-enum #project3 #project3-presentation {
     display: none;
@@ -484,9 +452,6 @@
     font-size: 0.7rem;
     text-align: justify;
   }
-  #projects .project-enum #project3:hover {
-    background-image: url(../images/trivia-blur.jpg);
-  }
   #projects .project-enum #project3:hover #project3-presentation {
     display: block;
   }
@@ -499,6 +464,9 @@
     position: absolute;
     top: 36%;
     left: 15%;
+  }
+  #projects .project-enum #project4:hover {
+    background-image: url(../images/srsly-blur.jpg);
   }
   #projects .project-enum #project4 #project4-presentation {
     display: none;
@@ -524,9 +492,6 @@
     font-size: 0.7rem;
     text-align: justify;
   }
-  #projects .project-enum #project4:hover {
-    background-image: url(../images/srsly-blur.jpg);
-  }
   #projects .project-enum #project4:hover #project4-presentation {
     display: block;
   }
@@ -540,6 +505,9 @@
     top: 62%;
     left: 51%;
     z-index: 9;
+  }
+  #projects .project-enum #project5:hover {
+    background-image: url(../images/phil-it-blur.jpg);
   }
   #projects .project-enum #project5 #project5-presentation {
     display: none;
@@ -564,9 +532,6 @@
     font-size: 0.7rem;
     text-align: justify;
   }
-  #projects .project-enum #project5:hover {
-    background-image: url(../images/phil-it-blur.jpg);
-  }
   #projects .project-enum #project5:hover #project5-presentation {
     display: block;
   }
@@ -579,6 +544,9 @@
     position: absolute;
     top: 64%;
     left: 18%;
+  }
+  #projects .project-enum #project6:hover {
+    background-image: url(../images/googlebooks-dark.jpg);
   }
   #projects .project-enum #project6 #project6-presentation {
     display: none;
@@ -602,9 +570,6 @@
     font-family: "Cinzel", serif;
     font-size: 0.7rem;
     text-align: justify;
-  }
-  #projects .project-enum #project6:hover {
-    background-image: url(../images/googlebooks-dark.jpg);
   }
   #projects .project-enum #project6:hover #project6-presentation {
     display: block;
@@ -793,13 +758,14 @@
   }
 }
 @media screen and (min-width: 1025px) {
+  .leftspace {
+    display: flex;
+  }
+
   html {
     scroll-snap-type: y mandatory;
   }
 
-  #portrait .leftspace {
-    display: flex;
-  }
   #portrait .porpicture {
     width: unset;
   }
@@ -811,22 +777,13 @@
   #resume {
     display: flex;
   }
-  #resume .leftspace {
-    display: flex;
-  }
 
   #projects {
-    display: flex;
-  }
-  #projects .leftspace {
     display: flex;
   }
 
   .back {
     position: fixed;
-  }
-  .back .leftspace {
-    display: flex;
   }
   .back .mycontact .social-icons {
     width: 10vw;
@@ -835,15 +792,9 @@
   #contact {
     display: flex;
   }
-  #contact .leftspace {
-    display: flex;
-  }
 
   .back2 {
     position: fixed;
-  }
-  .back2 .leftspace {
-    display: flex;
   }
   .back2 .resume-bio .skills {
     width: 75%;

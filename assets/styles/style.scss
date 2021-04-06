@@ -1,4 +1,16 @@
+$lightbackground:white;
+$resumeSectionTitle:#036E72;
+    
+
 @media screen and (min-width:300px){
+.leftspace{
+        height: 100%;
+        flex: 1 1;
+        background-color: $lightbackground;
+        display: none;
+        flex-wrap: wrap;
+        align-items:center;
+}
 .back{
     display: flex;
     height: 100vh;
@@ -7,20 +19,11 @@
     left: 0;
     right: 0;
     top: 0;
-    background-color: white;
-    
+    background-color: $lightbackground;
     z-index: -88;
-   ;
-   margin-left: auto;
-   margin-right: auto;
-   .leftspace{
-    height: 100%;
-    flex: 1 1;
-    
-    display: none;
-    flex-wrap: wrap;
-    align-items:center;
-}
+    margin-left: auto;
+    margin-right: auto;
+
    .mycontact{
     background-image: url(../images/contact-back.jpg);
     background-size: cover;
@@ -106,14 +109,7 @@ html{
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
-    .leftspace{
-        height: 100%;
-        flex: 1 1;
-        background-color: white;
-        display: none;
-        flex-wrap: wrap;
-        align-items:center;
-    }
+
     .resume-bio{
         display: flex;
         flex-direction: column;
@@ -137,7 +133,7 @@ html{
              height: 20%;
          }
          .edu-title{
-             color: #036E72;
+             color: $resumeSectionTitle;
              font-size: 1.5rem;
              font-family: 'Open Sans', sans-serif;
              letter-spacing: 0.08rem
@@ -157,7 +153,7 @@ html{
             align-items: center;
             justify-content: flex-start;
             .skill-title{
-                color: #036E72;
+                color: $resumeSectionTitle;
                 font-size: 1.5rem;
                 font-family: 'Open Sans', sans-serif;
                 letter-spacing: 0.08rem   
@@ -218,11 +214,7 @@ html{
                 margin-left: auto;
                 
                 overflow: hidden;
-            #up-arrow, #down-arrow{
-                text-align: center;
-                color: lightgray;
-                font-size: 5vh;
-            }
+           
             .wrap{
                 display: flex;
                 flex-direction: column;
@@ -256,17 +248,12 @@ html{
                     font-size: 1rem;
                     letter-spacing: 0.2rem;
                     transition: all ease-out .2s;
-                    .menu-image{
-                        height: 100%;
-                        width: 100%;
-                    }
+                    
                 }
                
                 
                
-                .up-arrow{
-                    font-size: 1rem;
-                }
+               
             }
     
             }
@@ -284,17 +271,10 @@ html{
     margin-left: auto;
     margin-right: auto;
     width:100% ;
-    background-color: white;
+    background-color: $lightbackground;
     display: flex;
    
-    .leftspace{
-        height: 100%;
-        display: none;
-        flex: 1 1;
-        background-color: white;
-        flex-wrap: wrap;
-        align-items:center;
-    }
+
 
     .porpicture{
         
@@ -368,14 +348,7 @@ html{
     position: relative;
     z-index: 10;
    
-    .leftspace{
-        height: 100%;
-        flex: 1 1;
-        background-color:white;
-        display: none;
-        flex-wrap: wrap;
-        align-items:center;
-    }
+
 
     .project-enum{
         flex: 5 5;
@@ -393,7 +366,7 @@ html{
         .right{
             display: flex;
             flex-direction: column;
-            background-color: white;
+            background-color: $lightbackground;
             height: 100%;
             flex: 1 1;
             .top{
@@ -402,18 +375,17 @@ html{
             }
             .bottom{
                 flex: 1 1;
-                background-color: white;
+                background-color: $lightbackground;
             }
             }
         .project{
             border:#28305f solid 1px;
             transition: background-image ease-in-out .1s;
-
+            &:hover{
+                cursor: pointer;
+            }
         }
-        .project:hover{
-           cursor: pointer;
-
-        }
+        
        
         #project1{
             height: 28%;
@@ -424,11 +396,14 @@ html{
             position: absolute;
             top: 4%;
             left: 52%;
+            &:hover{
+                background-image: url(../images/eventbook-blur.jpg);
+            }
             #project1-presentation{
                 display: none;
     
                 #project1title{
-                   display: block;
+                    display: block;
                     width: fit-content;
                     margin: auto;
                     margin-top: 2vh;
@@ -455,10 +430,7 @@ html{
     
             }
         }
-        #project1:hover{
-            background-size: cover;
-            background-image: url(../images/eventbook-blur.jpg);
-        }
+      
         #project1:hover #project1-presentation
         {
           display: block;
@@ -477,6 +449,9 @@ html{
             left: 20%;
             background-size: cover;
             background-position-x: center;
+            &:hover{
+                background-image: url(../images/clothing-dark.jpg);
+            }
            #project2-presentation{
             display: none;
 
@@ -508,9 +483,7 @@ html{
 
         }
         }
-        #project2:hover{
-            background-image: url(../images/clothing-dark.jpg);
-        }
+        
         #project2:hover #project2-presentation
         {
           display: block;
@@ -529,6 +502,9 @@ html{
             top: 33%;
             left: 55%;
             z-index: 10;
+            &:hover{
+                background-image: url(../images/trivia-blur.jpg);
+            }
             #project3-presentation{
                 display: none;
             
@@ -560,10 +536,7 @@ html{
             
             }
         }
-        #project3:hover{
-            
-            background-image: url(../images/trivia-blur.jpg);
-        }
+       
         #project3:hover #project3-presentation
         {
           display: block;
@@ -579,6 +552,9 @@ html{
             position: absolute;
             top: 36%;
             left: 15%;
+            &:hover{
+                background-image: url(../images/srsly-blur.jpg);
+            }
             #project4-presentation{
                 display: none;
             
@@ -611,11 +587,7 @@ html{
             
             }
         }
-        #project4:hover{
-            
-            background-image: url(../images/srsly-blur.jpg);
-            
-        }
+       
         #project4:hover #project4-presentation
         {
           display: block;
@@ -631,6 +603,9 @@ html{
             top: 62%;
             left: 51%;
             z-index: 9;
+            &:hover{
+                background-image: url(../images/phil-it-blur.jpg);
+            }
             #project5-presentation{
                 display: none;
     
@@ -662,9 +637,7 @@ html{
     
             }
         }
-        #project5:hover{
-            background-image: url(../images/phil-it-blur.jpg);
-        }
+       
         #project5:hover #project5-presentation
         {
           display: block;
@@ -679,6 +652,9 @@ html{
             position: absolute;
             top: 64%;
             left: 18%;
+            &:hover{
+                background-image: url(../images/googlebooks-dark.jpg);
+            }
             #project6-presentation{
                 display: none;
     
@@ -710,9 +686,7 @@ html{
     
             }
         }
-        #project6:hover{
-            background-image: url(../images/googlebooks-dark.jpg);
-        }
+       
         #project6:hover #project6-presentation
         {
           display: block;
@@ -749,7 +723,6 @@ html{
         width: fit-content;
         display: block;
         width: fit-content;
-        
         margin-top: 1vh;
         color: white;
         font-family: "Cinzel", serif;
@@ -926,15 +899,18 @@ textarea:hover {
 
 
 @media screen and (min-width:1025px){
+    .leftspace{
+        
+        display: flex;
+   
+}
 
    html{
        scroll-snap-type:  y mandatory;
    }
 
   #portrait{
-    .leftspace{
-        display: flex;
-    }
+   
     .porpicture {
         width:unset;
     }
@@ -948,23 +924,17 @@ textarea:hover {
 
     #resume{
         display: flex;
-        .leftspace{
-            display: flex;
-        }
+       
     }
 
     #projects{
         display: flex;
-        .leftspace{
-            display: flex;
-        }
+      
     }
 
     .back{
         position: fixed;
-        .leftspace{
-            display: flex;
-        }
+
         .mycontact{
             .social-icons{
                 width: 10vw;
@@ -973,16 +943,12 @@ textarea:hover {
     }
     #contact{
         display: flex;
-        .leftspace{
-            display: flex;
-        }
+        
     }
     .back2{
         
         position: fixed;
-        .leftspace{
-            display: flex;
-        }
+       
         .resume-bio{
             .skills{
                 width: 75%;
