@@ -429,12 +429,12 @@
   #projects .project-enum #project4 {
     height: 49.5vh;
     flex: 1 1 400px;
-    background-image: url("../images/srsly.jpg");
+    background-image: url("../images/shoppies.jpg");
     background-size: cover;
     background-position-x: center;
   }
   #projects .project-enum #project4:hover {
-    background-image: url(../images/srsly-blur.jpg);
+    background-image: url(../images/shoppies-blur.jpg);
   }
   #projects .project-enum #project4 #project4-presentation {
     display: none;
@@ -445,8 +445,8 @@
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 1.5vh;
-    color: yellow;
-    font-family: "Bungee Inline", cursive;
+    font-family: "Audiowide", cursive;
+    color: white;
     font-size: 1.5rem;
     font-weight: bolder;
   }
