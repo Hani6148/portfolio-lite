@@ -1,17 +1,16 @@
-$lightbackground:white;
-$resumeSectionTitle:#036E72;
-    
+$lightbackground: white;
+$resumeSectionTitle: #036e72;
 
-@media screen and (min-width:300px){
-.leftspace{
-        height: 100%;
-        flex: 1 1;
-        background-color: $lightbackground;
-        display: none;
-        flex-wrap: wrap;
-        align-items:center;
-}
-.back{
+@media screen and (min-width: 300px) {
+  .leftspace {
+    height: 100%;
+    flex: 1 1;
+    background-color: $lightbackground;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .back {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -24,17 +23,17 @@ $resumeSectionTitle:#036E72;
     margin-left: auto;
     margin-right: auto;
 
-   .mycontact{
-    background-image: url(../images/contact-back.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex: 5 5;
-    height: 100%;
+    .mycontact {
+      background-image: url(../images/contact-back.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      flex: 5 5;
+      height: 100%;
 
-    .social-icons{
+      .social-icons {
         display: flex;
         flex-direction: row;
         height: 4vh;
@@ -43,19 +42,18 @@ $resumeSectionTitle:#036E72;
         position: relative;
         top: -25vh;
 
-        a{  
-            display: block;
-            width: 20%;
+        a {
+          display: block;
+          width: 20%;
+          height: 100%;
+          .social-icon {
             height: 100%;
-            .social-icon{
-                height: 100%;
-                width: 100%;
-               }
+            width: 100%;
+          }
         }
-       
-    }
+      }
 
-    .mybio-title{
+      .mybio-title {
         width: 40%;
         text-align: center;
         font-family: "Amiri", serif;
@@ -64,40 +62,35 @@ $resumeSectionTitle:#036E72;
         font-size: 1.6rem;
         font-weight: bolder;
         margin-bottom: 0px;
-    }
-    
-    .mybio{
+      }
+
+      .mybio {
         margin-top: 0px;
         width: 50%;
         text-align: justify;
         font-family: "Amiri", serif;
         color: white;
         letter-spacing: 0.2rem;
-        
+
         font-size: 1.2rem;
-
+      }
     }
+  }
 
-}
-
-}
-
-
-
-html{
+  html {
     margin: 0px 0px 0px 0px;
     height: 100vh;
     width: 100%;
     overflow-y: scroll;
-    scroll-snap-type:none;
+    scroll-snap-type: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-    body{
-        margin: 0px 0px 0px 0px;
-    }
-    
-.back2{
+  }
+  body {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .back2 {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -110,748 +103,646 @@ html{
     margin-left: auto;
     margin-right: auto;
 
-    .resume-bio{
+    .resume-bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex: 5 5;
+      height: 100%;
+      background-color: #e3eaf1;
+
+      .work-education {
+        height: 50%;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-between;
-        flex: 5 5;
+        justify-content: center;
+
+        .edu-icon {
+          width: 20%;
+          height: 20%;
+        }
+        .edu-title {
+          color: $resumeSectionTitle;
+          font-size: 1.5rem;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: 0.08rem;
+        }
+        .edu {
+          font-size: 1rem;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: 0.08rem;
+        }
+      }
+      .skills {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        .skill-title {
+          color: $resumeSectionTitle;
+          font-size: 1.5rem;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: 0.08rem;
+        }
+        .skill-icon {
+          width: 10%;
+          height: 20%;
+        }
+        .skill-container {
+          width: 55%;
+          height: 35%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .skill-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 45%;
+
+            .skill-image {
+              width: 13%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fixed-wrap {
+    height: 100vh;
+    width: 16%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 100000;
+
+    .menuspace {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .menu {
+        display: flex;
+
+        flex-direction: column;
         height: 100%;
-        background-color:#e3eaf1;
-        
-        .work-education{
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
 
+        overflow: hidden;
 
-         .edu-icon{
-             width: 20%;
-             height: 20%;
-         }
-         .edu-title{
-             color: $resumeSectionTitle;
-             font-size: 1.5rem;
-             font-family: 'Open Sans', sans-serif;
-             letter-spacing: 0.08rem
-            }
-        .edu{
+        .wrap {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden;
+
+          #link1 {
+            writing-mode: horizontal-tb;
+            font-size: 1.5rem;
+            background: linear-gradient(
+              0deg,
+              rgb(30 164 194 / 72%) 50%,
+              transparent 50%
+            );
+          }
+
+          a {
+            writing-mode: vertical-rl;
+            display: block;
+            height: fit-content;
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            margin-bottom: 10vh;
+            text-decoration: none;
+            font-family: "Cinzel", serif;
+            color: rgb(66, 68, 68);
             font-size: 1rem;
-             font-family: 'Open Sans', sans-serif;
-             letter-spacing: 0.08rem
+            letter-spacing: 0.2rem;
+            transition: all ease-out 0.2s;
+          }
         }
-        }
-        .skills{
-            height: 50%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: flex-start;
-            .skill-title{
-                color: $resumeSectionTitle;
-                font-size: 1.5rem;
-                font-family: 'Open Sans', sans-serif;
-                letter-spacing: 0.08rem   
-            }
-            .skill-icon{
-                width: 10%;
-                height: 20%;
-            }
-            .skill-container{
-                width: 55%;
-                height: 35%;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                .skill-row{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    height: 45%;
-
-                    .skill-image{
-                        width: 13%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
+      }
     }
-   
+  }
 
-}
-
-    .fixed-wrap{
-        height: 100vh;
-        width: 16%;
-        position: fixed;
-        left: 0;
-        right: 0;
-        display: none;
-        z-index: 100000;
-      
-
-        .menuspace{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items:center;
-            .menu{
-               
-                display: flex;
-                
-                flex-direction: column;
-                height: 100%;
-                width: 100%;
-                margin-right: auto;
-                margin-left: auto;
-                
-                overflow: hidden;
-           
-            .wrap{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 100%;
-                justify-content: center;
-                margin-right: auto;
-                margin-left: auto;
-                overflow: hidden;
-
-                #link1{
-                    writing-mode: horizontal-tb;
-                    font-size: 1.5rem;
-                    background: linear-gradient(0deg,rgb(30 164 194 / 72%) 50%, transparent 50%);
-
-
-                }
-                
-                a{
-                    writing-mode: vertical-rl;
-                    display: block;
-                    height: fit-content;
-                    width: fit-content;
-                    margin-right: auto;
-                    margin-left: auto;
-                    text-align: center;
-                    margin-bottom: 10vh;
-                    text-decoration: none;
-                    font-family: 'Cinzel', serif;
-                    color: rgb(66, 68, 68);
-                    font-size: 1rem;
-                    letter-spacing: 0.2rem;
-                    transition: all ease-out .2s;
-                    
-                }
-               
-                
-               
-               
-            }
-    
-            }
-            
-        }
-      
-    }
-
-    
-
-#portrait{
+  #portrait {
     position: relative;
     z-index: 10;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    width:100% ;
+    width: 100%;
     background-color: $lightbackground;
     display: flex;
-   
 
+    .porpicture {
+      flex: 5 5;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/hani-design.jpg");
+      background-size: cover;
+      background-position: right;
 
-    .porpicture{
-        
-        flex: 5 5;
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/hani-design.jpg");
-        background-size: cover;
-        background-position: right;
-    
-        .name{
-            position: relative;
-            font-size: 2rem;
-            letter-spacing: 0.4rem;
-            top: 10vh;
-            left: 0.3rem;
-            font-family: 'Great Vibes', cursive;
-            width: max-content;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: auto;
-            margin-left: auto;
-            color: #036E72;
-        }
-        .webdevlo{
-
-            position: relative;
-            font-size:1rem;
-            letter-spacing: 0.4rem;
-            top: 8.9vh;
-            font-family: 'Libre Baskerville', serif;
-            width: max-content;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: rgb(27, 27, 27);
-        }
-        .quote{
-            position: relative;
-            font-size:1.5rem;
-            letter-spacing: 0.3rem;
-            top: 35vh;
-            font-family: 'Open Sans', sans-serif;
-            width: max-content;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: white;
-        }
-
+      .name {
+        position: relative;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        top: 10vh;
+        left: 0.3rem;
+        font-family: "Great Vibes", cursive;
+        width: max-content;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        color: #036e72;
+      }
+      .webdevlo {
+        position: relative;
+        font-size: 1rem;
+        letter-spacing: 0.4rem;
+        top: 8.9vh;
+        font-family: "Libre Baskerville", serif;
+        width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: rgb(27, 27, 27);
+      }
+      .quote {
+        position: relative;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        top: 35vh;
+        font-family: "Open Sans", sans-serif;
+        width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+      }
     }
-}
-#resume{
-    
+  }
+  #resume {
     display: none;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
-    width:100% ;
+    width: 100%;
     background-color: transparent;
-
-}
-#projects{
+  }
+  #projects {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
-    width:100% ;
+
+    width: 100%;
     position: relative;
     z-index: 10;
-   
 
+    .project-enum {
+      flex: 5 5;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      background-color: #b0bdcb;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
 
-    .project-enum{
-        flex: 5 5;
-        display: flex;
-        height: 100%;
-        background-color:  #b0bdcb;
-        background-repeat: no-repeat;
+      .project {
+        border: white solid 1px;
+        transition: background-image ease-in-out 0.1s;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      #project1 {
+        background-image: url(../images/eventbook.jpg);
         background-size: cover;
-        background-position: center;
-        position: relative;
-        .left{
-        height: 100%;
-        flex: 1 1
-        }
-        .right{
-            display: flex;
-            flex-direction: column;
-            background-color: $lightbackground;
-            height: 100%;
-            flex: 1 1;
-            .top{
-                background-color: #505550;; 
-                flex:1 1
-            }
-            .bottom{
-                flex: 1 1;
-                background-color: $lightbackground;
-            }
-            }
-        .project{
-            border:#28305f solid 1px;
-            transition: background-image ease-in-out .1s;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-        
-       
-        #project1{
-            height: 28%;
-            width: 30%;
-            background-image: url(../images/eventbook.jpg);
-            background-size: cover;
-            background-position-x: center;
-            position: absolute;
-            top: 4%;
-            left: 52%;
-            &:hover{
-                background-image: url(../images/eventbook-blur.jpg);
-            }
-            #project1-presentation{
-                display: none;
-    
-                #project1title{
-                    display: block;
-                    width: fit-content;
-                    margin: auto;
-                    margin-top: 2vh;
-                    color: rgb(127, 187, 236);
-                    font-family: "Cinzel", serif;
-                    font-size: 2.5rem;
-                    font-weight: bolder;
-                    
-                }
-                #project1-description{
-                    display: block;
-                    width: 80%;
-                    margin: auto;
-                    margin-top: 1vh;
-                    color: white;
-                    font-family: "Cinzel", serif;
-                    font-size: 0.7rem;
-                    text-align: justify;
-                    
-                }
-    
-                
-                
-    
-            }
-        }
-      
-        #project1:hover #project1-presentation
-        {
-          display: block;
-          
-            
-        
+        background-position-x: center;
+        height: 49.5vh;
+        flex: 1 1 400px;
 
+        &:hover {
+          background-image: url(../images/eventbook-blur.jpg);
         }
-        #project2{
-            height: 30%;
-            width: 25%;
-            background-repeat: no-repeat;
-            background-image: url(../images/clothing.jpg);
-            position: absolute;
-            top: 5%;
-            left: 20%;
-            background-size: cover;
-            background-position-x: center;
-            &:hover{
-                background-image: url(../images/clothing-dark.jpg);
-            }
-           #project2-presentation{
-            display: none;
+        #project1-presentation {
+          display: none;
 
-            #project2title{
-               display: block;
-                width: fit-content;
-                margin: auto;
-                margin-top: 6vh;
-                color: white;
-                font-family: 'Great Vibes';
-                font-size: 2.5rem;
-                font-weight: bolder;
-                
-            }
-            #project2-description{
-                display: block;
-                width: 80%;
-                margin: auto;
-                margin-top: 1vh;
-                color: white;
-                font-family: "Cinzel", serif;
-                font-size: 0.7rem;
-                text-align: justify;
-                
-            }
+          #project1title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            color: rgb(127, 187, 236);
+            font-family: "Cinzel", serif;
+            font-size: 2.5rem;
+            font-weight: bolder;
+          }
+          #project1-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 1vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
+        }
+      }
 
-            
-            
+      #project1:hover #project1-presentation {
+        display: block;
+      }
+      #project2 {
+        height: 49.5vh;
+        flex: 1 1 400px;
 
-        }
-        }
-        
-        #project2:hover #project2-presentation
-        {
-          display: block;
-          
-            
-        
+        background-repeat: no-repeat;
+        background-image: url(../images/clothing.jpg);
 
+        background-size: cover;
+        background-position-x: center;
+        &:hover {
+          background-image: url(../images/clothing-dark.jpg);
         }
-        #project3{
-            height: 30%;
-            width: 30%;
-            background-image: url("../images/trivia.jpg");
-            background-size: cover;
-            background-position-x: center;
-            position: absolute;
-            top: 33%;
-            left: 55%;
-            z-index: 10;
-            &:hover{
-                background-image: url(../images/trivia-blur.jpg);
-            }
-            #project3-presentation{
-                display: none;
-            
-                #project3title{
-                   display: block;
-                    width: fit-content;
-                    margin: auto;
-                    margin-top: 6vh;
-                    color: #df8cb5;
-                    font-family: 'Train One', cursive;
-                    font-size: 2.5rem;
-                    font-weight: bolder;
-                    
-                }
-                #project3-description{
-                    display: block;
-                    width: 80%;
-                    margin: auto;
-                    margin-top: 1vh;
-                    color: white;
-                    font-family: "Cinzel", serif;
-                    font-size: 0.7rem;
-                    text-align: justify;
-                    
-                }
-            
-                
-                
-            
-            }
-        }
-       
-        #project3:hover #project3-presentation
-        {
-          display: block;
-          
-        }
+        #project2-presentation {
+          display: none;
 
-        #project4{
-            height: 30%;
-            width: 33%;
-            background-image: url("../images/srsly.jpg");
-            background-size: cover;
-            background-position-x: center;
-            position: absolute;
-            top: 36%;
-            left: 15%;
-            &:hover{
-                background-image: url(../images/srsly-blur.jpg);
-            }
-            #project4-presentation{
-                display: none;
-            
-                #project4title{
-                   display: block;
-                    width: fit-content;
-                    margin: auto;
-                    margin-top: 2vh;
-                    margin-bottom: 1.5vh;
-                    color: yellow;
-                    font-family: 'Bungee Inline', cursive;
-                    font-size: 1.5rem;
-                    font-weight: bolder;
-                    
-                }
-                #project4-description{
-                    display: block;
-                    width: 80%;
-                    margin: auto;
-                    margin-top: 0vh;
-                    color: white;
-                    font-family: "Cinzel", serif;
-                    font-size: 0.7rem;
-                    text-align: justify;
-                    
-                }
-            
-                
-                
-            
-            }
+          #project2title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            color: white;
+            font-family: "Great Vibes";
+            font-size: 2.5rem;
+            font-weight: bolder;
+          }
+          #project2-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 1vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
         }
-       
-        #project4:hover #project4-presentation
-        {
-          display: block;
-          
+      }
+
+      #project2:hover #project2-presentation {
+        display: block;
+      }
+      #project3 {
+        height: 49.5vh;
+        flex: 1 1 400px;
+
+        background-image: url("../images/trivia.jpg");
+        background-size: cover;
+        background-position-x: center;
+
+        &:hover {
+          background-image: url(../images/trivia-blur.jpg);
         }
-        #project5{
-            height: 33%;
-            width: 36%;
-            background-image: url(../images/phil-it.jpg);
-            background-size: cover;
-            background-position-x: center;
-            position: absolute;
-            top: 62%;
-            left: 51%;
-            z-index: 9;
-            &:hover{
-                background-image: url(../images/phil-it-blur.jpg);
-            }
-            #project5-presentation{
-                display: none;
-    
-                #project5title{
-                   display: block;
-                    width: fit-content;
-                    margin: auto;
-                    margin-top: 6vh;
-                    color: rgb(134, 172, 214);
-                    font-family: 'Megrim', cursive;
-                    font-size: 2.5rem;
-                    font-weight: bolder;
-                    
-                }
-                #project5-description{
-                    display: block;
-                    width: 80%;
-                    margin: auto;
-                    margin-top: 1vh;
-                    color: white;
-                    font-family: "Cinzel", serif;
-                    font-size: 0.7rem;
-                    text-align: justify;
-                    
-                }
-    
-                
-                
-    
-            }
+        #project3-presentation {
+          display: none;
+
+          #project3title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            color: #df8cb5;
+            font-family: "Train One", cursive;
+            font-size: 2.5rem;
+            font-weight: bolder;
+          }
+          #project3-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 1vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
         }
-       
-        #project5:hover #project5-presentation
-        {
-          display: block;
-          
+      }
+
+      #project3:hover #project3-presentation {
+        display: block;
+      }
+
+      #project4 {
+        height: 49.5vh;
+        flex: 1 1 400px;
+
+        background-image: url("../images/srsly.jpg");
+        background-size: cover;
+        background-position-x: center;
+
+        &:hover {
+          background-image: url(../images/srsly-blur.jpg);
         }
-        #project6{
-            height: 29%;
-            width: 29%;
-            background-image: url(../images/googlebooks.jpg);
-            background-size: cover;
-            background-position-x: center;
-            position: absolute;
-            top: 64%;
-            left: 18%;
-            &:hover{
-                background-image: url(../images/googlebooks-dark.jpg);
-            }
-            #project6-presentation{
-                display: none;
-    
-                #project6title{
-                   display: block;
-                    width: fit-content;
-                    margin: auto;
-                    margin-top: 2vh;
-                    color: white;
-                    font-family: 'Monoton', cursive;
-                    font-size: 1.5rem;
-                    font-weight: bolder;
-                    
-                }
-                #project6-description{
-                    display: block;
-                    width: 80%;
-                    margin: auto;
-                    margin-top: 1vh;
-                    color: white;
-                    font-family: "Cinzel", serif;
-                    font-size: 0.7rem;
-                    text-align: justify;
-                    
-                }
-    
-                
-                
-    
-            }
+        #project4-presentation {
+          display: none;
+
+          #project4title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            margin-bottom: 1.5vh;
+            color: yellow;
+            font-family: "Bungee Inline", cursive;
+            font-size: 1.5rem;
+            font-weight: bolder;
+          }
+          #project4-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 0vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
         }
-       
-        #project6:hover #project6-presentation
-        {
-          display: block;
-          
+      }
+
+      #project4:hover #project4-presentation {
+        display: block;
+      }
+      #project5 {
+        height: 49.5vh;
+        flex: 1 1 400px;
+
+        background-image: url(../images/phil-it.jpg);
+        background-size: cover;
+        background-position-x: center;
+
+        &:hover {
+          background-image: url(../images/phil-it-blur.jpg);
         }
+        #project5-presentation {
+          display: none;
+
+          #project5title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            color: rgb(134, 172, 214);
+            font-family: "Megrim", cursive;
+            font-size: 2.5rem;
+            font-weight: bolder;
+          }
+          #project5-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 1vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
+        }
+      }
+
+      #project5:hover #project5-presentation {
+        display: block;
+      }
+      #project6 {
+        height: 49.5vh;
+        flex: 1 1 400px;
+
+        background-image: url(../images/googlebooks.jpg);
+        background-size: cover;
+        background-position-x: center;
+
+        &:hover {
+          background-image: url(../images/googlebooks-dark.jpg);
+        }
+        #project6-presentation {
+          display: none;
+
+          #project6title {
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+            color: white;
+            font-family: "Monoton", cursive;
+            font-size: 1.5rem;
+            font-weight: bolder;
+          }
+          #project6-description {
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 2vh;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            text-align: justify;
+          }
+        }
+      }
+
+      #project6:hover #project6-presentation {
+        display: block;
+      }
     }
-
-}
-#contact{
-    
+  }
+  #contact {
     display: none;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
-    width:100% ;
+    width: 100%;
     background-color: transparent;
-}
+  }
 
-.snap{
+  .snap {
     scroll-snap-align: start;
-}
+  }
 
-
-
-.link-container{
+  .link-container {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
     margin: auto;
     margin-top: 2vh;
 
-    .project-link{
-
-        width: fit-content;
-        display: block;
-        width: fit-content;
-        margin-top: 1vh;
-        color: white;
-        font-family: "Cinzel", serif;
-        font-size: 0.7rem;
-        text-align: justify;
+    .project-link {
+      width: fit-content;
+      display: block;
+      width: fit-content;
+      margin-top: 1vh;
+      color: white;
+      font-family: "Cinzel", serif;
+      font-size: 0.7rem;
+      text-align: justify;
     }
-}
+  }
 
-.icon{
-font-size: 2rem;
-}
+  .icon {
+    font-size: 4rem;
+  }
 
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+    color: black;
+  }
 
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
+  input:focus::-moz-placeholder,
+  textarea:focus::-moz-placeholder {
+    color: black;
+  }
 
+  input::placeholder,
+  textarea::placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
+  input:focus::placeholder,
+  textarea::focus:placeholder {
+    color: black;
+  }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  input::-ms-placeholder,
+  textarea::-ms-placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: black
-}
+  input:focus::-ms-placeholder,
+  textarea:focus::-ms-placeholder {
+    color: black;
+  }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  /* on hover placeholder */
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: black
-}
+  input:hover::-webkit-input-placeholder,
+  textarea:hover::-webkit-input-placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
-input::placeholder, textarea::placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  input:hover:focus::-webkit-input-placeholder,
+  textarea:hover:focus::-webkit-input-placeholder {
+    color: black;
+  }
 
-input:focus::placeholder, textarea::focus:placeholder {
-  color: black
-}
+  input:hover::-moz-placeholder,
+  textarea:hover::-moz-placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  input:hover:focus::-moz-placeholder,
+  textarea:hover:focus::-moz-placeholder {
+    color: black;
+  }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: black
-}
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
-/* on hover placeholder */
+  input:hover:focus::placeholder,
+  textarea:hover:focus::placeholder {
+    color: black;
+  }
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    color: black;
+    font-size: 0.875em;
+  }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: black;
-}
+  input:hover:focus::-ms-placeholder,
+  textarea:hover::focus:-ms-placeholder {
+    color: black;
+  }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: black;
-  font-size: 0.875em;
-}
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
 
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: black;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: black;
-  font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: black;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: black;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: black;
-}
-
-
-
-
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
-}
-
-input {
+  input {
     box-sizing: border-box;
-  font-size: 0.875em;
-  width: 100%;
-  height: 5vh;
-  padding: 0px 15px 0px 15px;
-  font-family: 'Open Sans', sans-serif;
-background: #ffffff91;
-  outline: none;
-  color: black;
-  border-bottom: solid 1px #b3aca7;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  letter-spacing: 0.08rem;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
+    font-size: 0.875em;
+    width: 100%;
+    height: 5vh;
+    padding: 0px 15px 0px 15px;
+    font-family: "Open Sans", sans-serif;
+    background: #ffffff91;
+    outline: none;
+    color: black;
+    border-bottom: solid 1px #b3aca7;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 0.08rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
 
-input:hover {
- background: #d8eaf1;
- color: black;
-}
+  input:hover {
+    background: #d8eaf1;
+    color: black;
+  }
 
-textarea {
+  textarea {
     box-sizing: border-box;
     width: 100%;
     height: 20vh;
@@ -859,7 +750,7 @@ textarea {
     background: #ffffff91;
     outline: none;
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.875em;
     border-bottom: solid 1px #b3aca7;
     border-top: none;
@@ -870,90 +761,77 @@ textarea {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
+  }
+  textarea:hover {
+    background: #d8eaf1;
+    color: black;
+  }
 
-}
-textarea:hover {
-  background: #d8eaf1;
-  color: black;
-}
-
-#submit {
+  #submit {
     width: 15%;
     padding: 0;
     margin: -5px 0px 0px 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 
     font-size: 1rem;
     color: #000000;
     font-weight: bold;
     outline: none;
     cursor: pointer;
- 
- 
+  }
+
+  #submit:hover {
+    color: black;
+  }
 }
 
-#submit:hover {
-  color: black;
-}
-}
+@media screen and (min-width: 1025px) {
+  .leftspace {
+    display: flex;
+  }
 
+  html {
+    scroll-snap-type: y mandatory;
+  }
 
-@media screen and (min-width:1025px){
-    .leftspace{
-        
-        display: flex;
-   
-}
-
-   html{
-       scroll-snap-type:  y mandatory;
-   }
-
-  #portrait{
-   
+  #portrait {
     .porpicture {
-        width:unset;
+      width: unset;
     }
   }
 
-    .fixed-wrap{
-        display: block;
-    }
+  .fixed-wrap {
+    display: block;
+  }
 
-   
+  #resume {
+    display: flex;
+  }
 
-    #resume{
-        display: flex;
-       
-    }
+  #projects {
+    display: flex;
+    height: 100vh;
+  }
 
-    #projects{
-        display: flex;
-      
-    }
+  .back {
+    position: fixed;
 
-    .back{
-        position: fixed;
+    .mycontact {
+      .social-icons {
+        width: 10vw;
+      }
+    }
+  }
+  #contact {
+    display: flex;
+  }
+  .back2 {
+    position: fixed;
 
-        .mycontact{
-            .social-icons{
-                width: 10vw;
-            }
-        }
+    .resume-bio {
+      .skills {
+        width: 75%;
+      }
     }
-    #contact{
-        display: flex;
-        
-    }
-    .back2{
-        
-        position: fixed;
-       
-        .resume-bio{
-            .skills{
-                width: 75%;
-            }
-        }
-    }
-
+  }
 }

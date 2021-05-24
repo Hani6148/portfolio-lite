@@ -42,7 +42,7 @@ $(document).on("scroll", (function () {
         $("#link4").css("background", "linear-gradient(0deg,rgb(243 233 216 / 70%) 50%, transparent 50%)");
     }
 
-    //bring the .back section forward if the scroll position is bigger than the height of the view port + 1 
+    //bring the .back section forward if the scroll position is bigger than the height of the viewport + 1 
     if ((pos > vh*2+1)) {
         $(".back").css("z-index", "5");
        
@@ -53,7 +53,7 @@ $(document).on("scroll", (function () {
             }
 
 }))
-
+ 
 
 
 
