@@ -148,7 +148,7 @@
     height: 20%;
   }
   .back2 .resume-bio .skills .skill-container {
-    width: 55%;
+    width: 75%;
     height: 35%;
     display: flex;
     flex-direction: column;
@@ -776,6 +776,9 @@ textarea:hover::focus:-ms-placeholder {
   }
   .back2 .resume-bio .skills {
     width: 75%;
+  }
+  .back2 .resume-bio .skills .skill-container {
+    width: 55%;
   }
 }
 

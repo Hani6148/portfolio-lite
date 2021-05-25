@@ -155,7 +155,7 @@ $resumeSectionTitle: #036e72;
           height: 20%;
         }
         .skill-container {
-          width: 55%;
+          width: 75%;
           height: 35%;
           display: flex;
           flex-direction: column;
@@ -831,6 +831,9 @@ $resumeSectionTitle: #036e72;
     .resume-bio {
       .skills {
         width: 75%;
+        .skill-container {
+          width: 55%;
+        }
       }
     }
   }
