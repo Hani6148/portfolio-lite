@@ -322,6 +322,7 @@ $resumeSectionTitle: #036e72;
     z-index: 10;
 
     .project-enum {
+      overflow-y: hidden;
       flex: 5 5;
       display: flex;
       flex-wrap: wrap;
@@ -344,7 +345,7 @@ $resumeSectionTitle: #036e72;
         background-image: url(../images/eventbook.jpg);
         background-size: cover;
         background-position-x: center;
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         &:hover {
@@ -380,7 +381,7 @@ $resumeSectionTitle: #036e72;
         display: block;
       }
       #project2 {
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         background-repeat: no-repeat;
@@ -421,7 +422,7 @@ $resumeSectionTitle: #036e72;
         display: block;
       }
       #project3 {
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         background-image: url("../images/trivia.jpg");
@@ -462,7 +463,7 @@ $resumeSectionTitle: #036e72;
       }
 
       #project4 {
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         background-image: url("../images/shoppies.jpg");
@@ -503,7 +504,7 @@ $resumeSectionTitle: #036e72;
         display: block;
       }
       #project5 {
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         background-image: url(../images/phil-it.jpg);
@@ -543,7 +544,7 @@ $resumeSectionTitle: #036e72;
         display: block;
       }
       #project6 {
-        height: 33.15vh;
+        height: auto;
         flex: 1 1 400px;
 
         background-image: url(../images/googlebooks.jpg);

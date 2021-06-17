@@ -300,6 +300,7 @@
     z-index: 10;
   }
   #projects .project-enum {
+    overflow-y: hidden;
     flex: 5 5;
     display: flex;
     flex-wrap: wrap;
@@ -321,7 +322,7 @@
     background-image: url(../images/eventbook.jpg);
     background-size: cover;
     background-position-x: center;
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
   }
   #projects .project-enum #project1:hover {
@@ -354,7 +355,7 @@
     display: block;
   }
   #projects .project-enum #project2 {
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
     background-repeat: no-repeat;
     background-image: url(../images/clothing.jpg);
@@ -391,7 +392,7 @@
     display: block;
   }
   #projects .project-enum #project3 {
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
     background-image: url("../images/trivia.jpg");
     background-size: cover;
@@ -427,7 +428,7 @@
     display: block;
   }
   #projects .project-enum #project4 {
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
     background-image: url("../images/shoppies.jpg");
     background-size: cover;
@@ -464,7 +465,7 @@
     display: block;
   }
   #projects .project-enum #project5 {
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
     background-image: url(../images/phil-it.jpg);
     background-size: cover;
@@ -500,7 +501,7 @@
     display: block;
   }
   #projects .project-enum #project6 {
-    height: 33.15vh;
+    height: auto;
     flex: 1 1 400px;
     background-image: url(../images/googlebooks.jpg);
     background-size: cover;
